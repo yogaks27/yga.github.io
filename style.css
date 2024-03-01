@@ -200,15 +200,15 @@ body {
 }
 
 .section-title {
-  background-color: #FFA500; 
+  background-color: #FFA500; /* Warna oranye cerah */
   padding: 10px;
   text-align: center;
-  margin-block-end: 30px;
+  margin-bottom: 30px; /* Menggunakan margin-bottom untuk memberikan jarak di bawah elemen */
 }
 
 .section-title .span {
   display: inline;
-  color: var(--portland-orange);
+  color: var(--portland-orange); /* Menggunakan warna sesuai variabel yang telah ditentukan sebelumnya */
 }
 
 .img-holder {
