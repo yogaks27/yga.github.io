@@ -207,7 +207,6 @@ body {
 }
 
 .section-title .span {
-  display: inline;
   color: var(--portland-orange); /* Menggunakan warna sesuai variabel yang telah ditentukan sebelumnya */
 }
 
