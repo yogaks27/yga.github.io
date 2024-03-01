@@ -204,6 +204,7 @@ body {
   padding: 10px;
   text-align: center;
   margin-bottom: 30px; /* Menggunakan margin-bottom untuk memberikan jarak di bawah elemen */
+  border-radius: 10px;
 }
 
 .section-title .span {
