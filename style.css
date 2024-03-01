@@ -200,6 +200,8 @@ body {
 }
 
 .section-title {
+  background-color: #FFA500; 
+  padding: 10px;
   text-align: center;
   margin-block-end: 30px;
 }
