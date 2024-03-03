@@ -986,7 +986,13 @@ body {
 
   .header .action-btn.user { display: block; }
 
-  .logo { font-size: 3.8rem; }
+  .logo {
+  font-size: 3.8rem; /* Ukuran font */
+  background-image: linear-gradient(to right, #FFA500 50%, #808080 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
 
   .navbar,
   .navbar.active {
