@@ -200,14 +200,35 @@ body {
 }
 
 .btn2 {
-  background-color: var(--black);
+  background-color: #FFA500;
   color: var(--white);
   max-width: max-content;
-  width: 100px; /* Ukuran lebar */
+  width: 200px; /* Ukuran lebar */
+  height: 25px; /* Ukuran tinggi */
   padding: 8px 25px;
   font-weight: var(--fw-700);
   border-radius: 10px;
   transition: var(--transition-1);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
 }
 
 .section-title {
