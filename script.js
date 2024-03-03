@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
  * add event on element
  */
@@ -15,8 +13,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
-
-
 
 /**
  * navbar toggle
@@ -41,8 +37,6 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
-
-
 /**
  * active header when window scroll down to 100px
  */
@@ -61,3 +55,17 @@ const activeElemOnScroll = function () {
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+
+/**
+ * Function to show popup
+ */
+function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+/**
+ * Function to hide popup
+ */
+function hidePopup() {
+  document.getElementById("popup").style.display = "none";
+}
