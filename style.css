@@ -203,8 +203,8 @@ body {
   background-color: #FFA500;
   color: var(--white);
   max-width: max-content;
-  width: 200px; /* Ukuran lebar */
-  height: 25px; /* Ukuran tinggi */
+  width: 500px; /* Ukuran lebar */
+  height: 50px; /* Ukuran tinggi */
   padding: 8px 25px;
   font-weight: var(--fw-700);
   border-radius: 10px;
