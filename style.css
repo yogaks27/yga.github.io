@@ -199,6 +199,17 @@ body {
   transition: var(--transition-1);
 }
 
+.btn2 {
+  background-color: var(--black);
+  color: var(--white);
+  max-width: max-content;
+  width: 100px; /* Ukuran lebar */
+  padding: 8px 25px;
+  font-weight: var(--fw-700);
+  border-radius: 10px;
+  transition: var(--transition-1);
+}
+
 .section-title {
   background-color: #FFA500; /* Warna oranye cerah */
   padding: 10px;
