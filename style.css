@@ -304,8 +304,12 @@ body {
 .nav-toggle-btn.active .close-icon { display: block; }
 
 .logo {
-  font-family: var(--ff-carter_one);
-  font-size: 3rem;
+  font-size: 3rem; /* Ukuran font */
+  font-family: var(--ff-carter_one); /* Keluarga font */
+  background-image: linear-gradient(to right, #FFA500 50%, #808080 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .header-actions {
