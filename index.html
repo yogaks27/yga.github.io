@@ -174,12 +174,20 @@
           <li>
               <div class="offer-card has-bg-image img-holder"
                 style="background-image: url('./info.png'); --width: 540; --height: 700;">
-            <br> <br>
-                <center><p class="card-subtitle">INFORMASI</p>
+            <br>
+                <center>
+            <p class="card-subtitle">INFORMASI</p>
+          <a href="#" class="btn2" onclick="showPopup()">Read More</a>
+                 </center>
+            </div>
 
-                <a href="#" class="btn2">Read More</a></center>
-
-              </div>
+            <div class="popup" id="popup">
+           <div class="popup-content">
+            <!-- Konten untuk popup -->
+           <p>Ini adalah konten popup.</p>
+         <button onclick="hidePopup()">Close</button>
+            </div>
+          </div>
             
           <ul class="grid-list">
 
