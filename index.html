@@ -134,6 +134,26 @@
                 margin-left: 20px;
             }
         }
+
+        .floating-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #1e1e1e;
+            border-radius: 15%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .floating-bubble img {
+            width: 30px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -142,7 +162,6 @@
     </header>
     <div class="container">
         <div class="event-box">
-            <h1>SERVER INFO</h1>
             <h2>LOBBY UTAMA</h2>
             <img src="lobbyutamaa.jpg" alt="Event Image" class="event-image">
             <div class="event-content">
@@ -205,5 +224,8 @@
         </div>
         <p>&copy; 2024 plixsmp | comunity. all rights reserved.</p>
     </div>
+    <a href="minecraft://?addExternalServer=plixsmp|play.plixsmp.my.id:19132" class="floating-bubble">
+        <img src="logomc.jpeg" alt="Game Control Logo">
+    </a>
 </body>
 </html>
