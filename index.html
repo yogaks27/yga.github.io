@@ -70,8 +70,6 @@
             font-size: 14px;
         }
 
-        
-
         .btn-whatsapp, .btn-event {
             background-color: #25D366;
             border: none;
@@ -148,36 +146,28 @@
             }
         }
 
-        .floating-bubble {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #F7FEFF;
-            border-radius: 15%;
-            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        .copy-box {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
             cursor: pointer;
-            animation: slide-up 0.5s ease-out;
+            margin-bottom: 20px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .floating-bubble img {
-            width: 45px;
-            height: 45px;
+        .copy-box:hover {
+            background-color: #3a3a3a;
         }
 
-        @keyframes slide-up {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        .copy-box.copied {
+            background-color: #00aaff;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -185,6 +175,11 @@
     <header>
         <img src="logo-plixsmp.png" alt="Logo PlixSMP" class="hero">
     </header>
+
+    <!-- Add this section below your hero logo -->
+    <div class="copy-box" id="copyBox" onclick="copyToClipboard('play.plixsmp.my.id:19132')">
+        play.plixsmp.my.id:19132
+    </div>
 
     <div class="container">
         <div class="event-box">
@@ -238,8 +233,21 @@
         </div>
         <p>&copy; 2024 plixsmp | comunity. all rights reserved.</p>
     </div>
-    <a href="minecraft://?addExternalServer=plixsmp|play.plixsmp.my.id:19132" class="floating-bubble">
-        <img src="plix-play.png" alt="Game Control Logo">
-    </a>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const copyBox = document.getElementById('copyBox');
+                copyBox.classList.add('copied');
+                copyBox.textContent = 'Berhasil menyalin!';
+                setTimeout(() => {
+                    copyBox.classList.remove('copied');
+                    copyBox.textContent = text;
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy text: ' + err);
+            });
+        }
+    </script>
 </body>
 </html>
