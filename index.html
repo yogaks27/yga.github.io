@@ -12,22 +12,10 @@
             background-color: #121212;
             color: #ffffff;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             margin: 0;
-            min-height: 100vh;
-            width: 100%;
-        }
-
-        .wrapper {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         .hero {
@@ -61,11 +49,11 @@
             border-radius: 8px;
             width: 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
         }
 
         .package-box h2, .event-box h2 {
             margin: 0 0 20px;
+            text-align: center;
         }
 
         .resources, .event-content {
@@ -82,39 +70,7 @@
             font-size: 14px;
         }
 
-        main {
-            padding: 20px;
-            width: 100%;
-        }
-
-        .post {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .post img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .post h2 {
-            margin-top: 10px;
-        }
-
-        .post p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .date {
-            display: block;
-            margin-top: 10px;
-            font-size: 12px;
-            color: #999;
-        }
+        
 
         .btn-whatsapp, .btn-event {
             background-color: #25D366;
@@ -144,11 +100,6 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-            }
-
-            .package-box, .event-box {
-                width: calc(50% - 40px);
-                margin: 10px;
             }
         }
 
@@ -230,75 +181,64 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <img src="plixlogo.png" alt="Logo PlixSMP" class="hero">
-        </header>
-        <main>
-            <div class="post">
-                <img src="https://via.placeholder.com/600x200" alt="Prison Impending Reset">
-                <h2>Prison Impending Reset</h2>
-                <p>
-                    Greetings LemonCloud! On Saturday 25th May, a huge revamp is coming to Prison! Per our usual release times, we plan to launch the new server at 8PM BST / 3PM EST. Click here to see when that is in your time zone. I want to thank the community members who voiced their suggestions on Discord. All the ideas helped us in
-                </p>
-                <span class="date">May 18, 2024</span>
-            </div>
-        </main>
-        <div class="container">
-            <div class="event-box">
-                <h2>LOBBY UTAMA</h2>
-                <img src="lobbyutamaa.jpg" alt="Event Image" class="event-image">
-                <div class="event-content">
-                    <div class="event-resource"><center>Nuansa bertema perkembangan mediaval yang lebih modern dan cozy.</center></div>
-                </div>
-            </div>
-            <div class="event-box">
-                <h2>LOBBY SURVIVAL</h2>
-                <img src="lobbysurv.jpg" alt="Event Image" class="event-image">
-                <div class="event-content">
-                    <div class="event-resource"><center>Survival eco dengan di padukan faction /clan war dan keren lainya.</center></div>
-                </div>
-            </div>
-            <div class="package-box">
-                <h2>RANKS FOREST</h2>
-                <div class="resources">
-                    <div class="resource"><center>Description: Forest legends jungle forest the green</center></div>
-                </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli forest" class="btn-whatsapp">IDR 10K/BULAN</a>
-            </div>
-            <div class="package-box">
-                <h2>RANKS KINGS</h2>
-                <div class="resources">
-                    <div class="resource"><center>Description: Kings who leads forest wisely and mightily</center></div>
-                </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli kings" class="btn-whatsapp">IDR 25K/BULAN</a>
-            </div>
-            <div class="package-box">
-                <h2>RANKS ABYAS</h2>
-                <div class="resources">
-                    <div class="resource"><center>Description: Abyas darkness that is a level higher than Kings</center></div>
-                </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli abyas" class="btn-whatsapp">IDR 40K/BULAN</a>
-            </div>
-            <div class="package-box">
-                <h2>RANKS ARSHAS</h2>
-                <div class="resources">
-                    <div class="resource"><center>Description: Arshas the legendary rank the blue</center></div>
-                </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli arshas" class="btn-whatsapp">IDR 70K/BULAN</a>
+    <header>
+        <img src="plixlogo.png" alt="Logo PlixSMP" class="hero">
+    </header>
+
+    <div class="container">
+        <div class="event-box">
+            <h2>LOBBY UTAMA</h2>
+            <img src="lobbyutamaa.jpg" alt="Event Image" class="event-image">
+            <div class="event-content">
+                <div class="event-resource"><center>Nuansa bertema perkembangan mediaval yang lebih modern dan cozy.</center></div>
             </div>
         </div>
-        <div class="footer">
-            <div class="icons">
-                <a href="https://discord.gg/6Xfe7E57a4"><img src="discord.svg" alt="Discord"></a>
-                <a href="https://www.instagram.com/plixsmp"><img src="instagram.svg" alt="Instagram"></a>
-                <a href="https://wa.me/6285175217652"><img src="whatsapp.svg" alt="WhatsApp"></a>
+        <div class="event-box">
+            <h2>LOBBY SURVIVAL</h2>
+            <img src="lobbysurv.jpg" alt="Event Image" class="event-image">
+            <div class="event-content">
+                <div class="event-resource"><center>Survival eco dengan di padukan faction /clan war dan keren lainya.</center></div>
             </div>
-            <p>&copy; 2024 PlixSMP. All rights reserved.</p>
+        </div>
+        <div class="package-box">
+            <h2>RANKS FOREST</h2>
+            <div class="resources">
+                <div class="resource"><center>Description: Forest legends jungle forest the green</center></div>
+            </div>
+            <a href="https://wa.me/6285175217652?text=saya ingin membeli forest" class="btn-whatsapp">IDR 10K/BULAN</a>
+        </div>
+        <div class="package-box">
+            <h2>RANKS KINGS</h2>
+            <div class="resources">
+                <div class="resource"><center>Description: Kings who leads forest wisely and mightily</center></div>
+            </div>
+            <a href="https://wa.me/6285175217652?text=saya ingin membeli kings" class="btn-whatsapp">IDR 25K/BULAN</a>
+        </div>
+        <div class="package-box">
+            <h2>RANKS ABYAS</h2>
+            <div class="resources">
+                <div class="resource"><center>Description: Abyas darkness that is a level higher than Kings</center></div>
+            </div>
+            <a href="https://wa.me/6285175217652?text=saya ingin membeli abyas" class="btn-whatsapp">IDR 35K/BULAN</a>
+        </div>
+        <div class="package-box">
+            <h2>RANKS EMFIRE</h2>
+            <div class="resources">
+                <div class="resource"><center>Description: Forest Emfire the wise chief there who guards and protects global plixsmp</center></div>
+            </div>
+            <a href="https://wa.me/6285175217652?text=saya ingin membeli emfire" class="btn-whatsapp">IDR 50K/BULAN</a>
         </div>
     </div>
-    <div class="floating-bubble">
-        <a href="https://wa.me/6285175217652"><img src="wa.png" alt="Chat on WhatsApp"></a>
+    <div class="footer">
+        <div class="icons">
+            <a href="https://discord.gg/t4Zrvfay"><img src="logodc.jpeg" alt="Discord Logo"></a>
+            <a href="https://chat.whatsapp.com/GSylylDvgYX1XX57vsrRpZ"><img src="logowa.jpeg" alt="WhatsApp Logo"></a>
+            <a href="https://youtube.com/@ygaks27?si=_fFcJKfEMJJqMVL-"><img src="logoyt.jpeg" alt="YouTube Logo"></a>
+        </div>
+        <p>&copy; 2024 plixsmp | comunity. all rights reserved.</p>
     </div>
+    <a href="minecraft://?addExternalServer=plixsmp|play.plixsmp.my.id:19132" class="floating-bubble">
+        <img src="plix-play.png" alt="Game Control Logo">
+    </a>
 </body>
 </html>
