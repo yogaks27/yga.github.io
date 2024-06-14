@@ -16,6 +16,8 @@
             align-items: center;
             flex-direction: column;
             margin: 0;
+            min-height: 100vh;
+            width: 100%;
         }
 
         .wrapper {
@@ -23,6 +25,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .hero {
@@ -56,11 +61,11 @@
             border-radius: 8px;
             width: 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
 
         .package-box h2, .event-box h2 {
             margin: 0 0 20px;
-            text-align: center;
         }
 
         .resources, .event-content {
@@ -79,6 +84,7 @@
 
         main {
             padding: 20px;
+            width: 100%;
         }
 
         .post {
@@ -138,6 +144,11 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+
+            .package-box, .event-box {
+                width: calc(50% - 40px);
+                margin: 10px;
             }
         }
 
@@ -267,26 +278,27 @@
                 <div class="resources">
                     <div class="resource"><center>Description: Abyas darkness that is a level higher than Kings</center></div>
                 </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli abyas" class="btn-whatsapp">IDR 35K/BULAN</a>
+                <a href="https://wa.me/6285175217652?text=saya ingin membeli abyas" class="btn-whatsapp">IDR 40K/BULAN</a>
             </div>
             <div class="package-box">
-                <h2>RANKS EMFIRE</h2>
+                <h2>RANKS ARSHAS</h2>
                 <div class="resources">
-                    <div class="resource"><center>Description: Forest Emfire the wise chief there who guards and protects global plixsmp</center></div>
+                    <div class="resource"><center>Description: Arshas the legendary rank the blue</center></div>
                 </div>
-                <a href="https://wa.me/6285175217652?text=saya ingin membeli emfire" class="btn-whatsapp">IDR 50K/BULAN</a>
+                <a href="https://wa.me/6285175217652?text=saya ingin membeli arshas" class="btn-whatsapp">IDR 70K/BULAN</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://discord.gg/6Xfe7E57a4"><img src="discord.svg" alt="Discord"></a>
+                <a href="https://www.instagram.com/plixsmp"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="https://wa.me/6285175217652"><img src="whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+            <p>&copy; 2024 PlixSMP. All rights reserved.</p>
         </div>
     </div>
-    <div class="footer">
-        <div class="icons">
-            <a href="https://discord.gg/t4Zrvfay"><img src="logodc.jpeg" alt="Discord Logo"></a>
-            <a href="https://chat.whatsapp.com/GSylylDvgYX1XX57vsrRpZ"><img src="logowa.jpeg" alt="WhatsApp Logo"></a>
-            <a href="https://youtube.com/@ygaks27?si=_fFcJKfEMJJqMVL-"><img src="logoyt.jpeg" alt="YouTube Logo"></a>
-        </div>
-        <p>&copy; 2024 plixsmp | comunity. all rights reserved.</p>
+    <div class="floating-bubble">
+        <a href="https://wa.me/6285175217652"><img src="wa.png" alt="Chat on WhatsApp"></a>
     </div>
-    <a href="minecraft://?addExternalServer=plixsmp|play.plixsmp.my.id:19132" class="floating-bubble">
-        <img src="plix-play.png" alt="Game Control Logo">
-    </a>
 </body>
 </html>
