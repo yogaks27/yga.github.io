@@ -55,7 +55,6 @@
         .package-box h2, .event-box h2 {
             margin: 0 0 20px;
             text-align: center;
-            font-family: 'good and cozy', sans-serif;
         }
 
         .resources, .event-content {
@@ -147,41 +146,12 @@
                 margin-left: 20px;
             }
         }
-
-        .copy-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #1e1e1e;
-            color: #ffffff;
-            border-radius: 8px;
-            padding: 10px;
-            cursor: pointer;
-            margin-bottom: 20px;
-            font-size: 18px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .copy-box:hover {
-            background-color: #3a3a3a;
-        }
-
-        .copy-box.copied {
-            background-color: #00aaff;
-            color: #ffffff;
-        }
     </style>
 </head>
 <body>
     <header>
         <img src="logo-plixsmp.png" alt="Logo plixsmp" class="hero">
     </header>
-
-    <!-- Add this section below your hero logo -->
-    <div class="copy-box" id="copyBox" onclick="copyToClipboard('play.plixsmp.my.id:19132')">
-        play.plixsmp.my.id:19132
-    </div>
 
     <div class="container">
         <div class="event-box">
@@ -235,21 +205,5 @@
         </div>
         <p>&copy; 2024 plixsmp | comunity. all rights reserved.</p>
     </div>
-
-    <script>
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                const copyBox = document.getElementById('copyBox');
-                copyBox.classList.add('copied');
-                copyBox.textContent = 'Berhasil menyalin!';
-                setTimeout(() => {
-                    copyBox.classList.remove('copied');
-                    copyBox.textContent = text;
-                }, 2000);
-            }).catch(err => {
-                alert('Failed to copy text: ' + err);
-            });
-        }
-    </script>
 </body>
 </html>
